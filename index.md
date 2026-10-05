@@ -52,3 +52,8 @@ Las consultas se responderán tan pronto como sea posible.
 
 
 © 2026 Eduardo Herraiz García · AIHub
+
+## Apps
+
+- [AI Hub · Privacidad](./aihub/privacy/) · [Soporte](./aihub/support/)
+- [DarijaUnified · Privacidad](./darijaunified/privacy/) · [Soporte](./darijaunified/support/)
