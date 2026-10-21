@@ -26,12 +26,12 @@ footer{margin-top:40px;font-size:.9rem;color:#57606a}
 <main>
 <nav><a href="../../">AIHub</a> · <a href="../support/">Soporte</a> · <a href="../privacy/">Privacidad</a></nav>
 <h1>Política de privacidad: AI Hub</h1>
-<p><em>Última actualización: 5 de octubre de 2026</em></p>
+<p><em>Última actualización: 21 de octubre de 2026</em></p>
 <p>Esta política explica cómo trata tus datos la aplicación <strong>AI Hub</strong> (“la App”), desarrollada por <strong>Eduardo Herraiz García</strong> (“el desarrollador”).</p>
 
 <h2>Resumen</h2>
 <ul>
-<li>Los modelos de inteligencia artificial se ejecutan <strong>en tu iPhone</strong> (on-device).</li>
+<li>Los modelos de inteligencia artificial se ejecutan <strong>en tu iPhone o iPad</strong> (on-device).</li>
 <li>El desarrollador <strong>no tiene servidores propios</strong>, <strong>no exige cuenta</strong> y <strong>no recopila, recibe ni comparte</strong> tus conversaciones, archivos ni datos personales.</li>
 <li>No hay publicidad, analítica, seguimiento ni SDKs de medición.</li>
 <li>La App solo usa Internet para las acciones descritas abajo, cuando tú las inicias.</li>
@@ -44,11 +44,14 @@ footer{margin-top:40px;font-size:.9rem;color:#57606a}
 <table>
 <thead><tr><th>Servicio</th><th>Cuándo</th><th>Qué se envía</th></tr></thead>
 <tbody>
-<tr><td>Hugging Face (<code>huggingface.co</code>)</td><td>Al buscar, explorar o descargar modelos</td><td>Términos de búsqueda e identificador del modelo / archivos del modelo</td></tr>
+<tr><td>Hugging Face (<code>huggingface.co</code>)</td><td>Al buscar, explorar o descargar modelos</td><td>Términos de búsqueda e identificador del modelo / archivos del modelo y, si has configurado uno, tu token de acceso de Hugging Face</td></tr>
 <tr><td>DuckDuckGo HTML (<code>html.duckduckgo.com</code>)</td><td>Cuando pides una búsqueda web al asistente</td><td>El término de búsqueda</td></tr>
 <tr><td>Wikimedia Commons (<code>commons.wikimedia.org</code>)</td><td>Cuando pides buscar imágenes</td><td>El término de búsqueda</td></tr>
 <tr><td>Apple Maps (<code>maps.apple.com</code>)</td><td>Si eliges abrir una dirección en Mapas</td><td>La dirección o consulta que indiques (se abre la app Mapas)</td></tr>
 <tr><td>URL que indiques</td><td>Si pides abrir o leer una página concreta</td><td>Una petición HTTP normal a esa página</td></tr>
+<tr><td>URL compartida (extensión Compartir)</td><td>Si eliges “Descargar” al compartir un enlace con la App</td><td>Una petición HTTP normal para descargar esa URL</td></tr>
+<tr><td>Imágenes enlazadas en documentos exportados</td><td>Al exportar un documento Word, HTML o PDF que contiene imágenes enlazadas</td><td>Una petición HTTP normal a la dirección de cada imagen, para incluirla en el documento</td></tr>
+<tr><td>Enlaces, llamadas, Atajos y otras apps</td><td>Cuando pides abrir un enlace, hacer una llamada, ejecutar un Atajo o abrir otra app</td><td>Lo necesario para esa acción (p. ej. el texto del portapapeles que se pasa a otra app al pegarlo); lo gestiona el sistema o la app de destino</td></tr>
 </tbody>
 </table>
 <p>Esos servicios reciben también datos técnicos propios de cualquier conexión (p. ej. dirección IP) y los tratan según sus políticas. <strong>No se les envían tus conversaciones completas ni tus archivos</strong>, solo lo necesario para la petición.</p>
@@ -56,10 +59,10 @@ footer{margin-top:40px;font-size:.9rem;color:#57606a}
 <h2>Permisos del dispositivo</h2>
 <p>La App solo pide cada permiso cuando usas la función correspondiente. Puedes retirarlos en Ajustes &gt; Privacidad y seguridad.</p>
 <ul>
-<li><strong>Micrófono y reconocimiento de voz:</strong> para dictar o transcribir. El reconocimiento usa el servicio de voz de Apple en el dispositivo (<code>requiresOnDeviceRecognition</code>). Según dispositivo/idioma, Apple puede aplicar reglas propias; el desarrollador no recibe audio ni transcripciones.</li>
+<li><strong>Micrófono y reconocimiento de voz:</strong> para dictar o transcribir. Cuando el dispositivo y el idioma lo permiten, el reconocimiento se hace en el dispositivo; si no, Apple puede procesar el audio según su propia política. El desarrollador nunca recibe audio ni transcripciones.</li>
 <li><strong>Cámara:</strong> para escanear documentos / OCR en el dispositivo.</li>
 <li><strong>Fotos (lectura / guardar):</strong> para elegir o guardar imágenes o vídeos que tú procesas o exportas.</li>
-<li><strong>Contactos, Calendario y Recordatorios:</strong> solo para las acciones que pidas al asistente (buscar/crear). La información permanece en las apps del sistema.</li>
+<li><strong>Contactos, Calendario y Recordatorios (acceso completo a Calendario y Recordatorios):</strong> solo para las acciones que pidas al asistente (buscar/crear). La información permanece en las apps del sistema.</li>
 <li><strong>Portapapeles:</strong> lectura <strong>iniciada por ti</strong> (p. ej. al pulsar actualizar/pegar). No hay monitorización continua en segundo plano.</li>
 </ul>
 
@@ -93,7 +96,8 @@ footer{margin-top:40px;font-size:.9rem;color:#57606a}
 
 <div class="en" lang="en">
 <h2>English summary</h2>
-<p>AI Hub runs AI models on your iPhone. The developer collects no personal data, has no backend accounts, and uses no ads/analytics. Data stays on-device (including App Group <code>group.com.eduardo.aihub</code>). Network use is limited to Hugging Face (model downloads), DuckDuckGo and Wikimedia Commons (when you ask), and optional Apple Maps / user-specified URLs. Microphone/speech use Apple on-device recognition. The custom keyboard does not send keystrokes to the developer; Full Access is only for on-device App Group communication with the main app.</p>
+<p><em>Last updated: 21 October 2026</em></p>
+<p>AI Hub runs AI models on your iPhone or iPad. The developer collects no personal data, has no backend accounts, and uses no ads/analytics. Data stays on-device (including App Group <code>group.com.eduardo.aihub</code>). Network use is limited to Hugging Face (model search and downloads, plus your Hugging Face access token if you set one), DuckDuckGo and Wikimedia Commons (when you ask), optional Apple Maps / user-specified URLs, downloading a shared URL when you choose “Descargar” (Download) in the Share extension, downloading images linked in Word/HTML/PDF documents during export, and opening links, calls, Shortcuts or other apps when you ask (e.g. clipboard text passed to another app on paste). Microphone/speech: recognition happens on-device when the device and language support it; otherwise Apple may process the audio under its own policy. The developer never receives audio or transcripts. Calendar and Reminders use full access, only for actions you request. The custom keyboard does not send keystrokes to the developer; Full Access is only for on-device App Group communication with the main app.</p>
 </div>
 
 <footer>© 2026 Eduardo Herraiz García · <a href="mailto:Eduherraiz319@gmail.com">Eduherraiz319@gmail.com</a> · <a href="../support/">Soporte</a></footer>
